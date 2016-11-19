@@ -1,0 +1,9 @@
+How to use:
+
+If you drag a single file on top of the program, it will split it into LeftGFX.bin and RightGFX.bin.  
+
+If you drag two files on top of the program, then it will combine them into one file called GFX.bin.
+
+
+You may also use the command line for either of those two options, swapping out "drag X on top of" with
+"launch with X as a parameter".

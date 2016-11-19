@@ -1,0 +1,47 @@
+Blocktool Super Deluxe
+A SMW block inserter by smkdan
+
+THIS PROGRAM REQUIRES THE .NET FRAMEWORK 2.0 MINIMUM.  MAKE SURE YOU HAVE IT INSTALLED BEFORE YOU ASK ABOUT WHY IT'S NOT RUNNING.
+
+This tool aims to eventually obsolete blktool.exe, the main two points listed below
+
+-blktool.exe's implementation compounds slowdown with every custom block added to the ROM.  This is not seen in my own block inserter.  The If-ElseIf style of block searching used by blktool.exe contributes a significant amount of slowdown to the game, which is fixed here using a simple jump table.  No matter how many blocks are inserted, it will run at the same speed regardless.
+-ASM insertion option.  With .bin files of blktool.exe, you'd need to use a hexeditor or reassemble the file.  Using this tool, it's a just a matter of changing definitions in the .asm file and inserting / reinserting it.
+
+FILES
+
+Each block has an entry in a database.  The database is called blocks.db and is updated as you go along.  For each ROM a list of blocks is made to track insertion.  It's called <romname>.dbk.
+
+USAGE
+
+First off, you need xkas in the folder for .asm insertion.  Usage is very similar to the original blocktool.  You add block data, choose a map16 # to assign a certain block in the database to, and it's done.  Remember to save and try it out in LM.
+
+I'll write a simple list of steps detailing an example.
+
+For example's sake, I downloaded a block called "coinblock.asm".  I placed that file in a folder called "asm" in the BTSD folder.  I want to insert it in Lunar Magic as map16 0x200.
+
+1. First, you need to add a block entry in the block data.  Select Data->Block data from the menu.  Click "Add" and type in the fields as you please.  Note that the tab (ASM or BIN) defines the type of block being inserted.  In this case the block is of .asm so keep the tab set at ASM.  
+
+2. In path, since you placed at in the "asm" folder,  type "asm\coinblock.asm" without the quotes ofcourse.  Click OK and the block is saved in the .db.
+
+3. Now you need to insert the block into the ROM.  Hit the Insert key or select Block->Insert from the menu.
+
+4. You should see your newly added block, choose it and in the map16 textbox type the map16 reference you want it to be accessed from by LM (in this case it is 200).  Hit OK and if all went well your block is now in the list view.
+
+5. Save your ROM, open LM, and you can access your new block using the "Direct Map16 Access" option in the "Add Objects Window".  YOu'd you want to change graphical and other behaviour settings for this block in the "16x16 editor" though.
+
+Place the block in your level, and it should be all set.
+
+A NOTE ON .BIN BLOCKS
+
+Using the BIN tab in the block data window, you can assign that block to be a .bin block (a block used with blktool.exe).  In this window, you type the EXACT settings you saw in blktool.exe, including decimal offsets and hex reloc offsets.  Where blktool.exe shows a '-1' in reloc offsets, just leave that textbox blank in BTSD.  NO SLOWDOWN OCCURS BY USING .BIN BLOCKS.  IT RUNS AS FAST AS .ASM BLOCKS.
+
+PROGRAMMING
+
+If you want to make a block, the template should explain alot of it but I will go over it here too.  You MUST have the sequence of jumps seen in the blocks included in the asm folder, and they must be in that order.
+
+Return using RTL, not RTS like in blktool.exe.
+
+The DB is changed automatically before jumping to the block's bank, so you don't have to change the DB to access tables or such in your block code.
+
+X register (sprite index if a sprite touched it) is preserved by my code so you can overwrite it since my hack already preserves it.	

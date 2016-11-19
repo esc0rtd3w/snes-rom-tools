@@ -1,0 +1,7 @@
+
+
+v. 0.52 - October 4, 2011: Modified the freespace-finding function so that it only goes up to bank 3F.
+
+v. 0.51 - August 28, 2011: Non-normal sprites now use all four extra bytes instead of just one or two.  Also fixed some bugs in some of the included sprites (and added one more sprite).
+
+v. 0.5 - August 16, 2011: First release.  Still lacks some features that I had planned, such as custom scroll sprites, inserting single sprites, and the ability to use more than one assembler for sprites.

@@ -1,0 +1,64 @@
+
+
+$7FA900-$7FA9EF - 12 misc. cluster sprite tables? (currently unused by the tool)
+$7FA9F0-$7FA9FF - unused?
+$7FAA00-$7FAA7D - 12 misc. extended sprite tables? (currently unused by the tool)
+$7FAA7E-$7FAA7F - unused?
+$7FAA80-$7FAAFF - 8 misc. overworld sprite tables? (currently unused by the tool)
+
+$7FAB00 - misc. generator RAM (initialized)
+$7FAB01 - misc. generator RAM (initialized)
+$7FAB02 - misc. generator RAM (initialized)
+$7FAB03 - misc. generator RAM (initialized)
+$7FAB04 - second extra byte of a generator
+$7FAB05 - third extra byte of a generator
+$7FAB06 - fourth extra byte of a generator
+$7FAB07 - second extra byte of a run-once sprite or cluster sprite generator
+$7FAB08 - third extra byte of a run-once sprite or cluster sprite generator
+$7FAB09 - fourth extra byte of a run-once sprite or cluster sprite generator
+$7FAB0A - third extra byte of a scroll sprite
+$7FAB0B - fourth extra byte of a scroll sprite
+$7FAB0C-$7FAB0F - reserved for future use
+$7FAB10,x - high byte of sprite number (or extra bits) and custom flag, c-----ee (bits 2-6 reserved for future use)
+$7FAB1C,x - unused (possibly reserved for future use) - was used by the old Sprite Tool
+$7FAB28,x - extra property byte 1
+$7FAB34,x - extra property byte 2: custom status index, -----sss (bits 3-7 reserved for future use)
+$7FAB40,x - extra byte 1
+$7FAB4C,x - extra byte 2
+$7FAB58,x - extra byte 3
+$7FAB64,x - extra byte 4
+$7FAB70,x - reserved for future use (possibly as a custom sprite clipping table) - used by a patch of mine that is not yet included with the tool
+$7FAB7C,x - reserved for future use (possibly as a custom object clipping table)
+$7FAB88 - sprite number of a respawned custom sprite, low byte
+$7FAB89 - sprite number of a respawned custom sprite, high byte (extra bits)
+$7FAB8A - X position of a respawned custom sprite, low byte
+$7FAB8B - X position of a respawned custom sprite, high byte
+$7FAB8C - extra byte 1 of a respawned custom sprite
+$7FAB8D - extra byte 2 of a respawned custom sprite
+$7FAB8E - extra byte 3 of a respawned custom sprite
+$7FAB8F - extra byte 4 of a respawned custom sprite
+$7FAB90-$7FAB91 - reserved for future use
+$7FAB92,x - reserved for future use
+$7FAB9E,x - custom sprite number (in normal sprites, usually identical to $9E,x)
+$7FABAA,x - reserved for future use - used by a patch of mine that is not yet included with the tool
+$7FABB6,x - reserved for future use - used by a patch of mine that is not yet included with the tool
+$7FABC2,x - reserved for future use - used by a patch of mine that is not yet included with the tool
+$7FABCE,x - reserved for future use - used by a patch of mine that is not yet included with the tool
+$7FABD8,x - reserved for future use (possibly as a seventh Tweaker byte)
+$7FABE4,x - reserved for future use (possibly as an eighth Tweaker byte)
+$7FABF2,x - reserved for future use
+$7FABFE - which subscreen number a generator is on (00-1F for the top or left row, 20-3F for the bottom or right row) --Ssssss
+$7FABFF - generator XY position within a subscreen (yyyyxxxx)
+$7FAC00,x - second extra byte of a shooter
+$7FAC08,x - third extra byte of a shooter
+$7FAC10,x - fourth extra byte of a shooter
+$7FAC18,x - misc. shooter table (initialized)
+$7FAC20,x - misc. shooter table (initialized)
+$7FAC38,x - misc. shooter table (initialized)
+$7FAC30,x - misc. shooter table (initialized)
+$7FAC38,x - misc. shooter table (initialized)
+
+$7FAC40-$7FACFF - reserved for future use
+
+$7FAD00-$7FAFFF - 768 bytes' worth of misc. sprite tables (not initialized or actually used by the tool, but used by some of my sprites)
+

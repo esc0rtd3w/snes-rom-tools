@@ -1,0 +1,114 @@
+@First
+------
+
+	To insert sound effects, run AddMusic from command line or a batch file with this usage.
+
+	usage:
+	AddMusic ROMname.smc -se
+
+
+@NOTE
+-----
+
+	When you use -se option of this AddMusic,
+	the code at 0x255 where MORE.asm inserts the code will be overwritten.
+	So, I made AddMusic insert MORE.bin auctomatically ONLY WHEN you use -se option.
+	Please put MORE.bin in the same directory as this tool, and this program tries to insert it.
+
+
+@List File
+----------
+
+	Use SoundEffect.ini as a list file.
+	You can specify the file path of a sound effect.
+	Ones for $1DFC should be in the 1DFC folder, ones for $1DF9 should be in the 1DF9 folder.
+
+
+	Do not specify the file path like this:
+	5D=1DFC/sound.txt
+
+	Do it like this instead:
+	5D=sound.txt
+
+
+	You can insert .bin file and .txt file.
+
+	If the extension was ".bin", AddMusic inserts it directly into ROM as a binary file.
+	If it was ".txt", AddMusic inserts it after converted.
+
+
+@txt file sound effect
+----------------------
+
+	You can make sound effect in a text file with the almost same method as music.
+
+commands available
+------------------
+-notes related
+	c, d, e, f, g, a, b, r, ^
+
+-octave realted
+	o, >, <
+
+-default note value
+	l
+
+-instrument
+	@
+
+-volume
+	v
+
+-pitch slide
+	&
+
+-hex value
+	$
+
+
+ 
+	But as for a few commands, there is a difference.
+
+
+'v' command
+-----------
+	This command set volume. The range must be "0-127" (not 255)
+e.g.	v64
+
+
+
+	If you specifiy it like this;
+e.g.	v0,127
+
+	the left number will be a left-volume, right one will be a right-volume.
+
+
+'@' command
+-----------
+	This command sets the instrument.
+e.g.	@8
+
+
+
+	If you specify it like this;
+e.g.	@8,1F
+
+	the hexadecimal value in right will be NCK value. The hexadecimal value range must be 00-1F
+
+'&' command
+-----------
+	This command should be placed right after a note, don't put a space between them.
+e.g.
+	o4 c& > c4& > c8& < c16
+
+
+
+@commands which you should specify in hex
+-----------------------------------------
+
+Loop the last note
+------------------
+
+$FF
+
+	This command was used for drum roll in SMW.

@@ -1,0 +1,6 @@
+{InitCodeLabel}:
+	;INIT CODE GOES HERE
+	RTL
+{MainCodeLabel}:
+	;MAIN CODE GOES HERE
+	RTL

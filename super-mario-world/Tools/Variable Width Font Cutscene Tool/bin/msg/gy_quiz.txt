@@ -1,0 +1,109 @@
+[sprite=6] (30,16,80,01,big)(30,26,A0,01,big) 
+(C0,16,8A,03,big)(C0,26,AA,03,big) 
+(D0,16,8C,03,big)(D0,26,AC,03,big)[/sprite]
+
+[topic]-CHUCK QUIZMO-[/topic]
+
+Come one, come all! This is Chuck Quizmo, your M.C. for Quizmo's Utterly Awesome Celestial Kwiz. Or QUACK, for short. Let's welcome Mario to the show![wait][erase]
+
+Today's prize for answering five questions correctly is access to the remaining two levels of the tower, with a chance for the grand prize of Essence Star ownership.[wait][erase]
+
+Alright...on to the show! Let's see how much knowledge is in that big noggin of yours![wait][erase]
+
+3...2...1...QUACK![wait][erase]
+
+[music=22]
+How many weeks does it take for mushrooms to bloom?[wait][erase]
+
+[pad left=16][br]
+3[br]
+4[br]
+2[br]
+5
+[pad left=8]
+[branch2=Wrong,Wrong,Right1,Wrong]
+
+[label=Right1]
+[erase]
+
+[music=23]
+Correct! Four questions away! Can you handle this? Next question...[wait][erase]
+
+[music=22]
+Which creature did NOT appear on top of munchers in the previous room?[wait][erase]
+
+[pad left=16][br]
+Red Koopa[br]
+Yellow Koopa[br]
+Boomerang Brother[br]
+Fish
+[pad left=8]
+[branch2=Right2,Wrong,Wrong,Wrong]
+
+[label=Right2]
+[erase]
+
+[music=23]
+Excellent! Two out of five correct answers! Let's carry on...[wait][erase]
+
+[music=22]
+Which was NOT a unique difference to one of the four tables?[wait][erase]
+
+[pad left=16][br]
+One has soup on it[br]
+One was a darker color[br]
+One had a single chair instead of two[br]
+One had a broken leg
+[pad left=8]
+[branch2=Wrong,Wrong,Right3,Wrong]
+
+[label=Right3]
+[erase]
+
+[music=23]
+That's three in a row, Mari-O! Keep this streak up, and you'll march straight into victory. Here's your fourth question.[wait][erase]
+
+[music=22]
+How many globes total were in the previous room?[wait][erase]
+
+[pad left=16][br]
+None[br]
+1[br]
+2[br]
+3
+[pad left=8]
+[branch2=Wrong,Wrong,Wrong,Right4]
+
+[label=Right4]
+[erase]
+
+[music=23]
+Great job! Now, prepare for your final question. We've saved the toughest one for last...[wait][erase]
+
+[music=22]
+One plus one equals what?[wait][erase]
+
+[pad left=16][br]
+2[br]
+Bacon
+[pad left=8]
+[branch2=Right5,Bacon]
+
+[label=Right5]
+[erase]
+
+[music=23]
+[pad left=8]
+Congratulations! You have earned access to the remaining floors of the tower! This is Chuck Quizmo...until next time! QUACK![wait][erase]
+[end=00]
+
+[label=Wrong]
+[erase]
+[pad left=8]
+OH! That is incorrect! I am dearly sorry, Mario, but you will have to try again another time.[wait][erase]
+[end=01]
+
+[label=Bacon]
+[erase]
+Mmmm...bacon, my all-time favorite breakfast item! Just for mentioning that, you get this special reward![wait][erase]
+[end=02]

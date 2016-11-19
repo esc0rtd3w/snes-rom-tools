@@ -1,0 +1,10 @@
+The Executeable inside this package only tries to start Java with
+the .jar named like the Executable itself...
+
+Therefore you still need to Install Java!
+
+The only purpose for this Executeable is to for Setting the .jar
+as default program
+(since Windows only allows .exe and not .jar programs for that...)
+
+p.s. it also allows to open Files via Drag and Drop over the .exe

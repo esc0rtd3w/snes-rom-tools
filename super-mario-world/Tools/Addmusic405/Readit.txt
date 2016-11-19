@@ -1,0 +1,100 @@
+Hooray, a non broken addmusic that most people can use.
+
+Features:
+
+1. ADSR command (Handled by the normal $ED command). Make sure you don't use a decay value greater than 7. It never did anything anyways, but now it also breaks stuff.
+
+2. All the functions you wanted with carol's more.bin. Extra samples, changed tremelo, and different pitch bends. Any $E5 should be 100% compatible with this.
+
+3. Custom sound effects. You can now have all of carol's commands and custom sound effects. Awesome, right?
+
+4. Multiple subfunctions, enabled by write $ED then some value greater than 80. The subfunctions are:
+
+	a. Direct write to DSP command. To use, write $ED $80, followed by the DSP register to write, then the value you want to write to it.
+
+	b. h tune (As it's called by addmusicm). Detune a channel by a number of half steps. Don't use on a sound effect channel (4,6 or 7). To use, $ED $81, followed by the number of half steps you want it to tune up or down. Values greater than 80 are down (With FF being -1) and less than 80 are up.
+
+	c. SPC Data write. Let's you insert data into ARAM. To use, $ED $82, followed by the 16bit big endian addres you want to write to ($01 $00 would write to $0100), follwed by the number of bytes you want to write -1 (16bit, so to write 1 byte would be $00 $00, writing 2 bytes would be $00 $01, etc), followed by the bytes to write.
+
+	d. SPC Code write. Acts just like SPC Data write, except it will then jump to what you inserted. To use, $ED $83, then it works exactly like SPC data write. Always end your code with a $6F (RET) or with a jump to a function that ends in $6F (If you want to save bytes).
+
+5. Turns off echo whenever it loads a song (Should get rid of the stupid clicking you get when switching from a song with echo to one without)
+
+6. Most importantly, if set up correctly, any song should be snes compatible. Hooray.
+
+7. Echo delay values up to ~7-8 in levels (Depending on the music you use, explained farther down)
+
+8. The code insertion command is now available within sound effects. It's just like the other kind, except you just use $ED instead of $ED $83. The positive upshot of this is that you can use a sound effect as a cheap SPC hack without actually having to hack the SPC. You can also write any command you want (ADSR, samples, whatever) as long as you know the hex code to do it.
+
+9. The FIR command. I'm not going to lie, I don't understand this at all, however, some people want it and it's simple enough to do without adding a new function.
+   
+   Basically, people who use addmusicM are used to a command like this: $F5 $XX $XX $XX $XX $XX $XX $XX $XX to set the FIR filters. Well, all that really does is write all the XX's to DSP registers $0F,$1F,$2F,$3F,$4F,$5F,$6F and $7F respectively so you can do this manually in my version like this:
+
+	$ED $80 $0F $TheFirstFIR
+	$ED $80 $1F $TheSecondFIR
+	$ED $80 $2F $TheThirdFIR
+	Etc.  up to $7F
+  The same values you get from Homing's tool should work. And that's it, easy as pie
+
+10. Non headered ROM support. You likely don't care, but your ROM no longer has to be headered to use this
+
+11. Custom ini paths. Instead of just using addmusic.ini, you can specify what ini it will use using the -i command. So if you wanted to use an ini "music.ini" instead, you would run this:
+	
+	addmusic.exe <Romname> -i music.ini
+      
+      If used after the -se, the -i command will load that ini for your sound effects.
+
+What you need to do:
+
+1. Echo on the OW is limited to 3. It was either that or not allow you to change songs on the OW... At all, I went with the latter.
+
+2. On that subject, because only one song is uploaded at a time, no changing songs mid-level without re-uploading the song, sorry.
+
+3. All your level songs should start with this:
+
+	$ED $80 $6D $2B
+	$ED $80 $7D $00
+	$F0
+   You may recognize those as writing to DSP commands. That will write $2B to $6D, which will move the echo buffer to $2B00 (The position of the echo buffer is that number *100), then make the echo buffer of 0 size. That usually gives enough space for the song and lets you have up to 5 echo delay. The last one is SMW's normal "Turn off echo" command.
+
+   OW music should start with this:
+	
+	$ED $80 $6D $68
+	$ED $80 $7D $00
+	$F0
+   It's much the same, except it moves the echo buffer to $6800. This is important because OW music will often take up all the space where you would normally put the echo buffer. This is also why you can only have 3 echo delay on the OW.
+   If this is too annoying for you to do by hand (I know it is for me), I included a little Python script that will add that header to every .txt in the folder with it. To run it, you just need to have Python 2.5+ installed and run it. There is one in the OW and in the Level folders.
+
+4. The ADSR command. I touched on this earlier, but for the love of God people, a decay of 9 is the same as a decay of 1, there is absolutely no difference EVEN IN ZSNES. That didn't used to break anything (It was just useless and you all were clearly deluding yourselves), but now it does, because my more.bin uses values for $ED above 80 for new commands, so it will break if you do that. Dur. Go through and change all your songs with more than 7 decay ($ED $SomethingBiggerThan80 $XX) to it's equivilent less than 80 value (Subract 80 from it, that's in hex).
+
+5. You can't use the vanilla cave music or likely any other vanilla music with echo. If you absolutely must, find a txt and insert it as custom music. That's all I can give you.
+
+6. You must have a channel 0. The reason for this is that the hex code for moving the echo buffer gets inserted into channel 0, so if you don't specify one, it will infinitely loop through the hex commands.
+
+Usage:
+
+1. Extract it where you want it
+
+2. If your ROM has used any Addmusic besides Romi's, sorry, you are out of luck. Get a new ROM.
+
+3. If you used carol's more.bin, just running -se might fix it. If not, use xkas anti to remove carol's N-SPC patch. Also, make a backup before you do -se incase it crashes your ROM
+
+4. Run Addmusic with the -se command with more.bin in the folder with it (Even if you have no sound effects). That will install my more.bin into the game.
+
+5. Fix your music so it will work (Described above)
+
+6. Use like you normally would Romi's addmusic
+
+A special note about echo delays:
+I mentioned above that you can have echo delay of up to 7-8 in levels. To achieve this, it depends on how many bytes your song uses. A song of length $1700 would only be able to have 5 echo ($2B00-$52FF), but for every $800 bytes less you use, you can add 1 more delay. This means if your song is less than $F00 bytes, you could use 6 delay, if it was less than $700 bytes, you could use 7 delay. To achieve this, you have to edit the header I said earlier. For every 1 delay more you want, subtract $8 from $2B in "$ED $80 $6D $2B". 
+
+It's also possible to get higher values. To find out how much echo delay you can have, add the number of bytes (hex) long your song is to $13A8, subtract that from $5570, divide that by $800, and round down to the nearest 1's place, that's the echo delay you can have. To find out what to put in the "$ED $80 $6D $2B" command, add the number of bytes (hex) long your song is to $13A8, round up to the nearest hundreds place, then divide that by $100. That will be the value to replace $2B with.
+
+A PUBLIC SERVICE ANNOUNCEMENT:
+If you are going to use echo, please, please let the echo buffer clear out before yo turn on the volume. If you don't, you will get a crashing sound every time you enter a level with echo and it's just freaking annoying. To do this, first enable your echo with 0 volume for the left and right speakers. Then set up your echo as normal. Then, wait a few notes (240ms), then turn on the echo volume. That will completely fix that problem. Thank you. Note: Slash Man says using a rest at the beginning of each track will not work, but doing something like this will:
+	
+	$EF $00 $00 $00
+	v0@0c8
+	$EF $2F $20 $20
+
+So yeah. Try using that. Or you could just use the echo fade like nintendo did. Your choice.

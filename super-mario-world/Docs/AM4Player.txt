@@ -1,0 +1,97 @@
+AM4 Player - The Addmusic 4.05 Player
+Version 1.01 -- Build: 05/05/2012 00:48 UTC -03:00
+
+Updates (1.01):
+	- Fixed some minor things on MML -> SPC conversion.
+	- Changed channel numbers to 0-7 instead of 1-8.
+	- Can now change Interpolation (see Options->Interpolation)
+	- Now can see if Echo/Pitch Modulation/Noise is active on channel.
+	- Now you can load a sample bank from a specify name from TXT. Add a line on your
+txt with this: "; sample bank: sample.bnk" without quotes and sample.bnk is the file to load in.
+	- Fixed annoying bug with tuning/tempo.
+
+====================================================
+
+AM4 Player is a Addmusic 4.05 Player, it's allows to play txt and bnk files designed for this Addmusic.
+
+Features:
+
+	- Can convert txt/mml music without any limitations.
+	- Can play songs with sample banks.
+	- Can dump to SPC, with ID666 Tags (using Text format).
+	- Can see current playing note (See MML Viewer).
+	- Can edit DSP, SPC700 RAM and APU Ports in real time.
+	- Can play sound effects ($1DF9/$1DFA/$1DFC)
+	- Allows to call alternative SPC Player instead of built-in one.
+	- Sample Rate can be up to 192,000 KHz.
+	- Bits can be up to 24.
+
+Why to use AM4 Player?
+
+AM4 Player is basically a Addmusic Player, but A LOT flexible. Why?
+Get a TXT file. Now you want to see what music it sounds. To do this:
+
+1. Find addmusic405 folder
+2. Edit addmusic.ini
+3. Open prompt command
+4. Insert all music
+5. Open Lunar Magic
+6. Set song number.
+7. Open Sample Tool
+8. Insert samples
+9. Save.
+10. Open emulator
+11. Goto specify level
+12. [...]
+
+Isn't... boring? Now with AM4 Player, all that you need is this:
+
+1. Get a TXT, drop to AM4Play.exe. Enjoy.
+
+Alternative:
+
+1. Get a TXT, drop to AM4 Player's Window. Enjoy.
+
+Another Alternative:
+
+1. Get a TXT. Open AM4Play.exe, find a file and play.
+
+Much better than using Addmusic, right?
+
+And you! Yes! You, music porter. What you think about all this?
+
+No more need to dump SPC with emulator with a 65% risk of getting overworld music or lost the intro!
+No more need to call addmusic.exe every time and open emulator to test your songs!
+No more need requesting help because of a crash. With MML Viewer, you can see current (or next) note.
+No more need to use external program to edit ID666 Tags for you dumped SPC.
+
+And a lot more!
+
+============================================================
+Using MML Viewer
+============================================================
+
+MML Viewer allows to see how to the AM4 Player have interpreted your song.
+It doesn't allow editing, but you can see if you music is interpreted correctly.
+
+As a bonus, if the music is playing, you can see the current playing note¹
+
+
+¹ - Doesn't show note if the music is paused, if channel is muted or SPC have a crash of a high level.
+Doesn't work in other OS too.
+
+===========================================================
+Thanks
+===========================================================
+
+Without these people, maybe AM4 player would never exist:
+
+ - Romi and co-authors for Addmusic source. Part of TXT->SPC conversion have made of Addmusic.cpp
+ - Alpha-II for SNESAPU.DLL (http://www.alpha-ii.com/)
+ - Authors of Be.HexEditor.
+ - Slash Man for the application icon.
+
+
+
+
+If you find any bug, please PM me, VitorVilela (userid: 8251) on SMW Central.

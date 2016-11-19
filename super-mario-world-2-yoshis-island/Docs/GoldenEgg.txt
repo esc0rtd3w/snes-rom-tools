@@ -1,0 +1,18 @@
+Golden Egg BETA 0.002, the YI Editor by mior/Romi
+
+
+Fixed
+- object 9A decoding,
+- object B9 decoding,
+- object D0 decoding, pointed out by Yoshi Fan
+
+Workaround
+- prevent the editor from hanging with the illegal placement of object 4E, pointed out by Kipernal
+
+
+Credits
+
+WeifenLuo          - C# DockPanel Suite library
+Yusuke Kamiyamane  - Fugue Icons
+Ersanio            - quick-debugging.
+

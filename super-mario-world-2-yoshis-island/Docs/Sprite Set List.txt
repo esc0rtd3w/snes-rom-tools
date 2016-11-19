@@ -1,0 +1,175 @@
+Super Mario World 2: Yoshi's Island
+Eggvine Sprite Set List (2009)
+Author: Count Bleck
+
+Things to be aware of:
+ Most of the names listed here aren't the enemy's real name, but the name used in Eggvine for easy search.
+ The unused sprites from the Original and hard to find sprites have their Sprite number in brackets next to them, eg: Bubble Blower (SF1)
+ These values are in decimal! Use a Hex coverter or Windows Calculator to convert the numbers to Hex if you must.
+
+Note to self: Set 81 has unidentified Sprite.
+              Set 89 has unidentified Sprite.
+
+Enemy names Eggvine replaced for other names:
+ Cactus with/without pot   = The green thing without the pot ... {With/Without depends on Y}
+ Spike Hatted Bandit/Enemy = Red Spiky-Headed Soldier
+ Snifit                    = Shooting Shy Guy
+ Big Boo/Little Boo/Both   = 1 Big Boo with 2 little boos {Depends on X/Y}
+ Scary Goul                = Ghost that tries to scare Mario
+ Lemon Drops (Little Salvo)= Yellow Unshaven
+ Giant Man-Eating Fish     = Frog that tries to eat Mario to death
+
+To find a Sprite quickly, press Ctrl+F/Apple+F and punch in the name of the enemy/sprite you want.
+Search the Sprite/Enemy as singular first. If you can't find it, try plural.
+___________________________________________________________________
+00 - 20
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ 00: Goonies, Goonie without wings, Tap-Taps, Mildes, Pirhana Plants and Penguins
+ 01: Penguins, Bullet Bills, Tap-Taps, Mildes, Pirhana Plants, Directional Arrows and Birds
+ 02: Gusty, Fireballs in 6-4, Tap-Tap, Milde, Pirhana Plants, Cactus Shooting Pirhana Plants, Bubble Blower (SF1), Shooting Shy Guy and Cactus with/without pot
+ 03: Penguin, Shy Guy on Stilts, Ski Lifts, Egg Plants and Birds
+ 04: Hookbill's Mountains, Unshavens, Lanturn Ghosts, Penguins, Salactites, Egg Plants, Pirhana Plants, Tap-Taps and  Mildes
+ 05: Hookbill's Mountains, Shooting Shy Guys, Tap-Taps, Mildes, Pirhana Plants, Chomp that chases you and Fireballs in 6-4
+ 06: Ravens (S136), Cactus-Shooting Pirhana Plants, Goonies, Cactus with/without pot, Saw swap switch, Gusties and Flower (S110)
+ 07: Directional Arrows, Cannonball Shooter, Bullet Bills, Cactus-Shooting Pirhana Plants, Red Spiky-Headed Soldier and Red Shy Guy swinging a spike
+ 08: Raphael the Raven (SC), Kamek and Hookbill's Mountain Background
+ 09: Pirhana Plants, Lakitu (Wall + Cloud), Milde, Tap-Tap, Giant Fat Shy Guys and Petal Shooting Flowers
+ 10: Bats, Unshavens, Egg Redirecting Arrows, Directional Arrows, Flower Shy Guys, Flower Guys, Lanturn Ghosts, Petal Shooting Flower and Giant Egg
+ 11: Bats, Unshavens, Egg Redirecting Arrows, Directional Arrows, Flower (S110) Cannon Ball Shooter and Ghost Shy Guys that move the Spike Mace center
+ 12: Ghost Shy Guys that move the Spike Mace center, Egg Plants
+ 13: Speedy Gustys, Nippers, Flower (S110) and Directional Arrows
+ 14: Hookbill's Mountains, Eggplants, Skis and Bubble Blower (SF1)
+ 15: Pirhana Plants (all), Tap-Taps, Mildes, Egg Redirecting Arrows, Cactus with/without pot, Baseball Boyss, 3/6 Petal Flower
+ 16: Poochey, Pirhana Plants, Unshavens, Lanturn Guys, Bats, Mildes, Tap-Taps
+ 17: Big Boo/Little Boo/Both, Scary Goul, Ghost Shy Guy, Speedy Gusty, Nippers, Directional Arrows, Mouse with skeleton/egg/nothing
+ 18: Tunnel Ghosts, Aqua Lakitus, Nippers, Speedy Gustys, Mildes, Tap-Taps and Pirhana Plants
+ 19: Naval Pirhana, Pirhana Plants, Nippers, Speedy Gustys, 3/6 Petal Flower, Kamek, Mildes and Tap-Taps
+ 20: Sewer Ghosts, Dancing Spear Guys, Shy Guys on Stilts, Bubble Blower (SF1) and Egg Plant
+___________________________________________________________________
+21 - 40
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ 21: Ducks, Crabs, Tall Shy Guys, Spear Guy, Torpedo Tossing Ghost Shy Guys, Blindfold Boo, ? Spike, Fire Guy and Bandit
+ 22: Flower (S110), Pirhana Plants, Ghost that swaps left from right, Bandit, ? Spike, Tap-Tap, Milde and Directional Arrows
+ 23: Salvo the Slime, Yellow Unshavens, Blindfold Boos, Scary Gouls, Ghost Shy Guys, Mouse with skeleton/egg/nothing, Fire Guys and Sparky
+ 24: Sewer Ghosts, Dancing Spear Guys, Baseball Boys, Mace Shy Guys, Red Spiky-headed Soldiers and Directional Arrows
+ 25: Flower (S110), Bandits, Blindfold Boos, Karate Guys, Fire Guys, Ghost Shy Guys, Mouse with skeleton/egg/nothing and the ? Spike
+ 26: Bandits, Shooting Shy Guys, Fire Guys, Karate Guys, Ghost Shy Guys, Ghost that changes left from right, ? Spike and Mouse with skeleton/egg/nothing
+ 27: Lanturn Ghosts, Unshavens, Bats, Bandits, ? Spike, Fireball in 6-4 and Mouse with skeleton/egg/nothing
+ 28: Pirhana Plants, Cactus Shooting Pirhana Plants, Bubble Blower (SF1), Egg Plants, Skeleton Goonies, Tap-Taps, Mildes and Cactus with/without pot
+ 29: Spear Guys, Dancing Spear Guys, Crabs, Karate Guys, Chomp on a Chain, Skelton Goonies, Blindfold Boos and Fire Guys
+ 30: Flower (S110), Fireballs in 6-4, Salactites, Fire Guys, Blindfold Boos and Mouse with skeleton/egg/nothing
+ 31: Hookbill's Mountains, Goonies and the Saw swap switch
+ 32: Ducks, Tall Shy Guys, Torpedo Tossing Ghost Shy Guys, Squid, Red Fish and Normal Fish (for Submarine areas)
+ 33: Monkeys, Koopas, Nippers, Speedy Gustys, Nippers, Bubble Blower (SF1), Egg Plant Cactus Shooting Pirhana Plants and Cactus with/without pot
+ 34: Big Boo/Little Boo/Both, Fireball in 6-4, Spinning Log, Chain Fireball, Directional Arrows, Mouse with skeleton/egg/nothing, Balloon Boo, Ghost Shy Guy and Pipe Cork
+ 35: Balloon Boo, Directional Arrows, Lava Post, Mouse with skeleton/egg/nothing, Mice that crawl into holes, Pipe Cork, Ghost Shy Guy and Little Boos
+ 36: Salvo the Slime, Yellow Unshavens, Kamek, Pirhana Plant, Tap-Tap, Mildes, Egg Plant and Bubble Blower (SF1)
+ 37: Boss Tap-Tap the Red-Nosed, Pirhana Plant, Kamek, Little Boo, Pipe Cork, Chain Fireball, Spinning Log, Little Boo, Milde, Tap-Taps, Egg Plant and Bubble Blower
+ 38: Baseball Boys, Ghost Shy Guy, Mouse with skeleton/egg/nothing, Mice that crawl into holes, ? Spike, Bandit, Pirhana Plant, Cactus with/without pot and Fireball in 6-4
+ 39: Hookbill's Mountains, Gusty
+ 40: Salvo the Slime, Yellow Unshavens, Spear Guys, Crabs, Cheep-Cheep, Monkeys, Directional Arrows, Egg Plants and Bubble Blowers (SF1)
+___________________________________________________________________
+41 - 60
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ 41: Cheep-Cheep, Water Spitting Fish, Spear Guys, Crabs, Torpedo Tossing Ghost Shy Guys and Monkeys
+ 42: Spear Guys, Crabs, Bubble Blower (SF1), Egg Plant, Monkey, Unshaven you can't swallow, 3/6 Petal Flower and Directional Arrows
+ 43: Cheep-Cheep, Giant Man-Eating Fish and Floating Platform
+ 44: Pirhana Plant, Monkeys, Mildes, Tap-Taps, Unshaven you can't swallow, Harry the Hedgehog, Melon Balls and Directional Arrows
+ 45: Unshavens, Bats, Lanturn Ghosts, Melon Ball, Harry the Hedgehog, Ghost Shy Guy, Mouse with skeleton/egg/nothing, Mice that crawl into holes and 3/6 Petal Flower
+ 46: Pirhana Plants, Frog, Shooting Shy Guy, Milde, Tap-Tap and Monkeys
+ 47: Flower Guy, Flower Shy Guy, 3/6 Petal Flower, Petal Shooting Flower, Giant Eggs and Directional Arrows
+ 48: Chain Fireball, Balloon Boo, Lakitu, Wall Lakitu, Fishing Lakitu, Ducks, Tall Shy Guy, Egg Plant, Bubble Blower (SF1), Directional Arrows
+ 49: Bigger Boo, Big Boo/Little Boo/Both, Pipe Cork, Kamek, Unshavens, Bats, Lanturn Guy, Flower (S110), Spinning Log and Directional Arrows
+ 50: Ghost Shy Guys, Ghost Shy Guys that move the Spike Mace center, Ghost Shy Guy that pulls up Spike Ball, Flower (S110), Lakitu, Wall Lakitu, Fishing Lakitu and Mouse with skeleton/egg/nothing
+ 51: Chomp that chases you, Bullet Bill, Bats, Lanturn Ghost, Unshavens, Red Spiky-Headed Soldier and Directional Arrows
+ 52: Unshaven that can't be eaten, Egg Plant, Bubble Blower (SF1), Unshavens, Lanturn Ghosts, Bats, Sewer Ghosts
+ 53: Pirhana Plants, Flower Guys, Flower Shy Guys, Flying Goonie, Goonie without wings, Saw swap switch, Tap-Taps, Milde and Directional Arrows
+ 54: Pirhana Plants, Unshavens, Lanturn Ghosts, Bats, Bubble Blower (SF1), Egg Plant, Goonie without wings, Tall Shy Guy, Ducks, Tap-Taps, Milde and Saw Swap Switch
+ 55: Aqua Lakitu, Koopas, Ghost Shy Guys, Mouse with skeleton/egg/nothing, Fireballs in 6-4 and Fuzzies
+ 56: Koopas, Baseball Boys, Mouse with skeleton/egg/nothing, Ghost Shy Guys and Fireballs in 6-4
+ 57: Pirhana Plants, Red Spiky-Headed Soldier, Bandits, ? Spikes, Bullet Bills, Tap-Taps, Milde, Shooting Shy Guys and Directional Arrows
+ 58: Bandits, ? Spike, Hookbill's Mountains and Directional Arrows
+ 59: Pirhana Plants, Wigglers, Tap-Taps, Milde, Koopa, Fuzzies, Goombas and the Enemy that throws spike balls
+ 60: Same as 59, but with Bullet Bills, not Wigglers
+___________________________________________________________________
+61 - 80
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ 61: Pirhana Plants, Milde, Tap-Taps, Koopas, Bullet Bills, Egg Plants and Bubble Blowers (SF1)
+ 62: Pirhana Plants, Harry the Hedgehog, Melon Ball, Milde, Tap-Taps, Koopas and Giant Eggs
+ 63: Pirhana Plants, Milde, Tap-Taps, Chomps on a Chain, Chomp that chases you, Egg Plants, Bubble Blowers
+ 64: Hookbill's Mountains, Bullet Bills, Shooting Shy Guy, Egg Plant and Bubble Blowers (SF1)
+ 65: Pirhana Plants, Tap-taps, Milde, Spear Guy, Dancing Spear Guys, Crab, Unshaven that can't be swallowed, Egg Plants and Bubble Blowers
+ 66: Koopas, Pokey bouncing a cactus, Lakitu, Wall Lakitu, Egg Plants and Bubble Blowers (SF1)
+ 67: Lakitu, Wall Lakitu, 3/6 Petal Flower, Koopas, Flower Shy Guys, Flower Guys, Bandits, ? Spike, Egg Plant and Bubble Blowers (SF1)
+ 68: Poochey, Pirhana Plants, Milde, Tap-Taps and Hookbill's Mountains
+ 69: Baseball Boys, Egg Plants, Bubble Blowers and Hookbill's Mountains
+ 70: Pirhana Plants, Cheep-Cheeps, Koopas, Shy Guys on Stilts, Milde and Tap-Taps
+ 71: Ghost Shy Guys, Ghost Shy Guys that pulls up Spike Ball, Ghost Shy Guys that move the Spike Mace center, Fish that spits fire, Koopas, Mouse with skeleton/egg/nothing and Directional Arrows
+ 72: Bullet Bills, Unshavens, Lanturn Ghosts, Bats, Egg Plants, Bubble Blowers (SF1), Crabs, Cheep-Cheeps and Spear Guys
+ 73: Pirhana Plants, Ski Lifts, Lakitu, Wall Lakitu, Pokey bouncing a Cactus, Penguins, Milde, Tap-Taps, Egg Plants and Bubble Blowers (SF1)
+ 74: Pirhana Plants, Milde, Tap-Taps, Little Boos, Cheep-Cheeps, Fish that spits water, Penguins, Spinning Log, Pipe Cork, Egg Plant and Bubble Blowers (SF1)
+ 75: Mouse with skeleton/egg/nothing, Ghost Shy Guy, Blindfold Boo, Balloon Boo, Chain Fireball
+ 76: Pirhana Plants, Lakitu, Blizzard Lakitu, Wall Lakitu, Penguins, Goombas, Enemy that throws spike balls, Tap-Taps, Milde and Birds
+ 77: Lanturn Ghost, Unshavens, Bats, Petal Shooting Flowers, Fish that spits water, Giant Egg, Monkeys, Gusty and Red Spiky-Headed Soldier
+ 78: Pirhana Plants, Penguins, Tap-Taps, Milde, Pokey bouncing a cactus, Lakitu, Wall Lakitu, Blizzard Lakitu, Directional Arrows and Birds
+ 79: Pirhana Plants, Nippers, Ducks, Tall Shy, Baseball Boys, Lakitu, Wall Lakitu, Milde, Tap-Taps, Goonies without wings and Saw swap switch
+ 80: Bandits, Cactus with/without pot, Egg Plants, Bubble Blowers (SF1) and Hookbill's Mountains
+___________________________________________________________________
+81 - 100
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ 81: Unshaven, Lanturn Ghost, Bats, Ghost Shy Guys, Mouse with skeleton/egg/nothing, Mice that crawl into holes, Egg Plant and Bubble Blowers (SF1)
+ 82: Ski Lifts, Directional Arrows and Hookbill's Mountains
+ 83: Pirhana Plants, Unshaven that you can swallow, Crab, Spear Guys, Dancing Spear Guy, Nippers, Monkeys, Speedy Gusty, Milde and Tap-Taps
+ 84: Pirhana Plants, Tap-Taps, Milde, Monkeys, Nippers, Unshaven you can't swallow, Speedy Gusty, Cactus with/without pot and Cactus Shooting Pirhana Plant
+ 85: Pirhana Plants, Tap-Taps, Milde, Bandits, Flower Pots, ? Spike, Torpedo Tossing Shy Guys, Little Boo, Spinning Log and Pipe Cork
+ 86: Flower Shy Guys, Flower Guys, Melon Ball, Harry the Hedgehog, Little Boo, Cactus shooting Pirhana Plant, Torpedo Tossing Shy Guys, Nippers, Speedy Gustys, Spinning Log and Pipe Cork
+ 87: Potted Ghost, Kamek, Flower Pots, Sewer Ghosts and Hookbill's Mountains
+ 88: Salvo the Slime, Yellow Unshavens, Pirhana Plants, Milde, Tap-Taps, Monkeys and Hookbill's Mountains
+ 89: Goonie, Goonie without wings, Baseball Boy, Kamek, Penguins and Birds
+ 90: Bullet Bills, Unshavens, Bats, Lanturn Ghosts and Hookbill's Mountains
+ 91: Crab, Spear Guys, Torpedo Tossing Ghost Shy Guys, Koopas, Directional Arrows, Squid, Red Fish and Fish (for Submarine areas) 
+ 92: Flying Goonies, Goonies without wings, Flying bone Goonie, Bone Goonie without wings, Penguins, Saw swap switch and birds
+ 93: Pokey bouncing a Cactus and Hookbill's Mountains
+ 94: Pirhana Plants, Tap-Taps, Milde, Cactus Shooting Pirhana Plants, Bullet Bills, Cactus with/without pot, Fish that spits fire and Red Spiky-Headed Soldier
+ 95: Shooting Shy Guys, Poochey, Cactus with/without pot, Cactus Shooting Pirhana Plant, Shy Guys on Stilts and Hookbill's Mountain Background
+ 96: Large Shy Guys that produce a normal egg, Petal Shooting Flower, Giant Eggs, Big Boo, Kamek, Egg Plant, Bubble Blowers (SF1) and Hookbill's Mountains
+ 97: Hookbill the Koopa, Koopas, Kamek, Egg Plant, Bubble Blowers and Hookbill's Mountain Background
+ 98: Pirhana Plants, Tap-Taps, Milde, Pokey bouncing a Cactus, Flower Guys, Flower Shy Guys, 3/6 Petal Flower, Egg Redirecting Arrows and Directional Arrows
+ 99: Pirhana Plants, Chomp on a Chain, Milde, Tap-Taps, Flower Guys, Flower Shy Guys, Directional Arrows, Egg Plants and Bubble Blowers (SF1)
+100: Salvo the Slime, Yellow Unshavens, Unshavens, Lanturn Ghosts, Bats, Shy Guys on Stilts, 3/6 Petal Flower and Salactites
+___________________________________________________________________
+101 - 127
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+101: Boss Marching Milde, Giant Milde, Milde, Tap-Taps, Pirhana Plants and Kamek
+102: Burt the Bashful (S46), Sluggy the Unshaven, Unshavens, Bats, Lanturn Ghosts, Kamek, Egg Plants and Bubble Blowers (SF1)
+103: Blargg, Ghost Shy Guys that move the Spike Mace center, Little Burts, Bandits, ? Spike, Chomp that chases you and Flower Pot
+104: Prince Froggy (S45), Frogs, Kamek, Hookbill's Mountains and Decorative Frogs
+105: Pirhana Plants, Tap-Taps, Milde, Fuzzies, Melon Balls, Harry the Hedgehog, Egg Plants, Bubble Blowers (SF1) and Hookbill's Mountain Background
+106: Flower Guy, Flower Shy Guys, Floating Platform, Flower Pot, Wigglers and Hookbill's Mountains
+107: Pirhana Plants, Milde, Tap-Taps, Goonies without Wings, Saw swap switch, Bandits, Directional Arrows and ? Spikes
+108: Salvo the Slime, Yellow Unshavens, Fish that spits water, Directional Arrows and Hookbill's Mountains
+109: Pirhana Plants, Tap-Taps, Milde, Unshavens, Lanturn Ghosts, Bats, Nippers, Speedy Gusty, Directional Arrows, Egg Plants and Bubble Blowers (SF1)
+110: Pirhana Plants, Shy Guys on Stilts, Tap-Taps, Milde, Flower Guys, Flower Shy Guys and Directional Arrows
+111: Salvo the Slime, Yellow Unshavens, Kamek, Egg Plants and Bubble Blowers (SF1)
+112: Blargg, Monkeys, Unshavens that can't be swallowed, Chomp that chases you, Directional Arrows, Squid, Red Fish and Fish (for Submarine areas)
+113: Chomp that chases you, Flower Guys, Flower Shy Guys and Directional Arrows
+114: Pirhana Plants, Tap-Taps, Milde, Mouse with skeleton/egg/nothing, Mice that crawl into holes, Cactus Shooting Pirhana Plants, Cactus with/without pot, Baseball Boys, Ghost Shy Guys and Directional Arrows
+115: Koopas and Directional Arrows
+116: Giant Eggs, Petal Shooting Flower, Flower Guys, Flower Shy Guys, Koopas and Directional Arrows
+117: Frogs, Cheep-Cheep, Ducks, Crabs, Tall Shy Guys, Unshaven that can't be swallowed, Monkeys and Spear Guys
+118: Gustys and Directional Arrows
+119: Hookbill the Koopa, Kamek and Goonie Bones without wings 
+120: Salvo the Slime, Yellow Unshavens, Ghost Shy Guys, Scary Gouls, Mouse with skeleton/egg/nothing and Blindfold Boo
+121: Magical Kamek, Unshavens, Lanturn Ghosts Bats, Pirhana Plants, Milde and Tap-Taps
+122: Shy Guys on Stilts, Unshaven that can't be swallowed, Cheep-Cheeps, Floating Platform and Monkeys
+123: Bowser, Magical Kamek and Kamek
+124: Pirhana Plants, Milde, Tap-Taps, Unshavens, Lanturn Ghosts, Bats, Koopas, Lakitu, Wall Lakitu, Egg Redirecting Arrows and Directional Arrows
+125: Pirhana Plants, Milde, Tap-Taps, Ducks, Tall Shy Guys, Koopas, Nippers, Speedy Gusty and Directional Arrows
+126: Bullet Bills, Ducks, Tall Shy Guys and Directional Arrows
+127: Salvo the Slime, Yellow Unshavens, Milde, Tap-Taps, Ghost that changes left from right, Pirhana Plants, Egg Plants and Bubble Blowers (SF1)
+___________________________________________________________________
+NSP Sprites
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+S46 = Burt the Bashful
+SD7 = Sluggy The Unshaven
+S190= Makes Salactites Fall

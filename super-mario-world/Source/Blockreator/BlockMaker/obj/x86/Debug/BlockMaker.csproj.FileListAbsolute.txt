@@ -1,0 +1,16 @@
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\bin\Debug\BlockMaker.exe.config
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.Form1.resources
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.Properties.Resources.resources
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\bin\Debug\BlockMaker.exe
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\bin\Debug\BlockMaker.pdb
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.exe
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.pdb
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.EditForm.resources
+C:\Users\Matthew\Documents\Visual Studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.CodeForm.resources
+C:\Users\Matthew\Documents\Visual Studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.SubroutineForm.resources
+C:\Users\Matthew\Documents\Visual Studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.RAMEditForm.resources
+C:\Users\Matthew\documents\visual studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.DisplayMessageForm.resources
+C:\Users\Matthew\Documents\Visual Studio 2010\Projects\BlockMaker\BlockMaker\obj\x86\Debug\BlockMaker.Map16ChangeForm.resources

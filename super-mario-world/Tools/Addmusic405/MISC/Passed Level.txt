@@ -1,0 +1,33 @@
+?0	;Won't loop
+
+#0
+?1	;disable intro part
+/
+@4 t56 y10 $DE$23$14$20 q3C o5 f=48 f=48 d=12 r=12 f=48 d=12 r=12 q6C f=24 q2B d=24 c=24 q6C f=96 d=12 r=12 q5C o6 c=24 q1B d=24 c=24 d=24 q3C c=36 o5 c=12 a+=12 a=12 g=12 ^=12 q6C f=96 r=24 r=24 o6 f=24 r=24 
+
+#1
+$F0 @2 y20 $DC$54$00 q7F o4 f=84 $DD$00$0C$B7 $DD$00$18$B0 $DD$00$30$A4
+$00
+/
+@5 t56 y10 $DE$00$00$00 q5B o5 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=96 r=96 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 q5C c=8 r=8 q5B a=8 c=8 ^=8 ^=8 r=8 r=8 r=8 c=24 r=24 
+
+#2
+@2 y20 $DC$54$00 q7E o4 c=84 $DD$00$0C$B0 $DD$00$18$AB $DD$00$30$9F
+/
+@4 y10 q4B o2 f=24 r=24 f=24 r=24 d+=24 r=24 d+=24 r=24 d=24 r=24 d=24 r=24 c+=24 r=24 c+=24 r=24 c=24 r=24 r=24 r=24 r=24 r=24 d=24 e=24 f=24 r=24 c=24 r=24 f=24 r=24 f=24 r=24 
+
+#3
+?1	;disable intro part
+/
+@5 y15 r=1 q49 o5 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a+=96 r=96 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 a=8 r=8 c=8 a=8 ^=8 ^=8 r=8 r=8 r=8 a=24 r=24 
+
+#5
+?1	;disable intro part
+/
+@6 y5 $DE$23$14$20 q3C o5 c=48 c=48 o4 a=12 r=12 o5 c=48 o4 a=12 r=12 q6C o5 c=24 q2B o4 a=24 f=24 q6C o5 c=96 o4 a=12 r=12 q5C o5 e=24 q1B f=24 e=24 f=24 q3C e=36 o4 g=12 o5 g=12 f=12 e=12 ^=12 q6C c=96 r=24 r=24 o6 c=24 r=24 
+
+#7
+?1	;disable intro part
+/
+@6 y15 $DE$23$14$20 q3C o4 a=48 a=48 f=12 r=12 a=48 f=12 r=12 q6C a=24 q2B f=24 f=24 q6C a=96 f=12 r=12 r=24 r=24 r=24 r=24 r=36 e=12 o5 e=12 c=12 o4 a+=12 ^=12 q6C a=96 r=24 r=24 o5 a=24 r=24 
+

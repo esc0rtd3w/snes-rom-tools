@@ -1,0 +1,16 @@
+STIM2BIN - converts stripe image (.stim) files intended for SMW Layer 3 BGs into one or two .bin files to be inserted using genericuploader.asm
+
+Coded by: edit1754
+
+Quick little usage tutorial:
+1. Either drag a .stim file on top of STIM2BIN.exe, or open STIM2BIN.exe and type in the path to the .stim file
+2. enter Y or N for whether or not you're planning on overwriting the status bar.
+	Note that in order to ensure the status bar gets overwritten, your BG must contain at least one tile in the first 32x32 quadrant.
+	Enter "no" if you're not using Sprite Status Bar, and enter "yes" if you are.
+3. It will generate one or two .bin files depending on where the BG's tiles are placed. Rename them to ExGFX files and insert them into your ROM.
+	Be sure to keep track of which one is which.
+4. in genericuploader.asm (Included with the ExGFX Revolution Patch Set), insert the entries listed in the console window into the table in genericuploader.asm.
+	Sometimes it will output one .bin file and require you to insert it into two different locations.
+	Replace {LEVELNUM} with your level number, and {EXGFXNUM} with the ExGFX file's number.
+5. Insert any GFX using the Layer 3 ExGFX patch, edit palettes, or anything else you need for your Layer 3 BG.
+6. Enjoy!

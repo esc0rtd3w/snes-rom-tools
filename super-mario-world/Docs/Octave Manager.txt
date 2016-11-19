@@ -1,0 +1,25 @@
+ This tool can do multiple stuff to the language used by SMW's custom music.
+ The language is also known as MML: Music Macro Language
+
+ It currently focuses on the octave functions. It is slightly buggy though,
+ when it comes to editing the MML inside the program (mainly when you use stuff,
+ which involves text colors).
+ But for your information, this tool was NEVER designed to edit MMLs. 
+ It just runs the input through the appropiate octave functions.
+
+ If the tool freezes on you, you might want to 
+ input the stuff channel by channel, not everything at the same time.
+ The algorithm is pretty slow. But hey, it still works.
+
+    MISC NOTES:
+
+ The octave swap function uses the ¿ character. I assumed nobody uses it.
+
+ The octave rise-lower function does not verify the octaves, so
+ the function can even rise the octaves up to 9.
+
+ Always keep a backup of your music file.
+
+ Tool coded in Visual C# 2008 studios by Ersanio from SMWCentral.
+
+ Last note: You atleast need the .NET Framework 2.0 to run this tool.

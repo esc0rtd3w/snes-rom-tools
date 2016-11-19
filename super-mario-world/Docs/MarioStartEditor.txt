@@ -1,0 +1,60 @@
+<unimportant>
+When I changed the Mario Start ! screen in my Hack with a patch someone asked me how I did it. 
+After I got asked I looked for a Tool that changes the Mario Start ! screen but couldn't find one so I decided why not make one and here we are
+Anyway,
+</unimportant>
+
+Start Editor v1.1 by TheBiob:
+
+This is an (hopefully) easy to use tool to change the Mario/Luigi Start screen
+
+v1.0 features:
+	- A display what it's going to look like
+	- Changeable Palettes (.pal files only)
+	- Outputs an ASM file for Asar
+	- Can patch ROM directly
+
+v1.1 changes:
+	- Made the screen bigger (Should be the size of the actual screen now)
+	- Moved the palette selection window into the main editor
+	- Added Game Over/Time Up screen (Enabling "Highlight Mario/Luigi Tile" will highlight the tiles coming from left for these two screens)
+	- Added "Load From ROM" and "Load From File"(*) support
+	- Added window to select which screens to insert (Works with "Create ASM Patch" and "Patch ROM directly")
+	- Added an option to fix a bug(**) (This does NOT work with "Patch ROM directly" create an ASM file and patch it with asar instead) (Only needs to be inserted once unless you change the Y position again)
+	- Added "Change Y position" option. (Please note that if the fix mentioned above is already inserted you will have to reinsert it. Just selecting Enable won't change anything as the fix moves this part somewhere else)
+	- Added auto load for Mario Start ! screen (Reads from the "mariostart.mstrt" file included in the download. If it loaded correctly it will show up as soon as you select both graphic files. If the program can't find the file it'll just display an empty screen. Still works though)
+	- Added "Right Click To Select Tile From Screen"
+	- Fixed very minor spelling mistakes that probably no one noticed anyway.
+
+(*) This is actually just there so the editor can load the Mario Start image when it starts since I obviously can't put a rom to read from in there.
+	You can create a file by going to Create File (Patch -> Create File) though I don't know why you would want that since you can read from rom directly... oh well
+
+(**) The original game only checks if the upper row has an empty tile which means that if you have a tile only on the bottom row it wouldn't show up
+	on the other hand only having a tile on the upper row will show a random tile on the bottom row. This patch is required if you have a tile only on one of the rows somewhere in your edit
+	If you don't have this situation anywhere in your edit this fix isn't required. To apply the fix just go to Generate ASM Patch (Patch -> Generate ASM Patch), select "Install Row Patch" and click ok. You'll get an asm file which you need to apply with asar.
+	Also here is a patch to remove that fix if you ever want to get rid of it again:
+-----------------------------
+	header
+	lorom
+	org $009216
+	LDA $90D1,X
+	db $30,$13
+-----------------------------
+Credits:
+	- Ladida for the Documentation on the Mario start screen (http://www.smwcentral.net/?p=section&a=details&id=4736)
+	- Luigi-San for the original Patch (http://www.smwcentral.net/?p=section&a=details&id=4546)
+
+Using the Tool:
+	For the Editor to work you need to load GFX0F.bin and GFX10.bin. To load the files go to Load GFX0F/Load GFX10 (File -> Load GFX0F/File -> LoadGFX10)
+	when loaded you can already start editing with the standard sprite palette that most original tiles use.
+	If you want to change the palette you can go to Load Palette (File -> Load Palette) and select the palette that gets loaded during Mario Start !. The standard palette comes with the tool.
+	To change the Mario Start Screen just select a palette then select the Tile, flip X/Y if needed and place the tile anywhere in the Yellow marked
+	region of the screen.
+IMPORTANT:
+	SMW only changes the Mario/Luigi but NOT the Start !. That means you can't have a message for Mario and a completely different one for Luigi
+	you can highlight the tiles that will change depending on Player 1 or 2 by going to "Display -> Start Screen -> Highlight Mario/Luigi Tiles.
+	
+	When you're done editing the screen you can generate the ASM code for asar (Patch -> Generate ASM Patch) or patch the ROM directly (Patch -> Patch ROM directly)
+	and you're done. If you disabled LM's restore functions I recommend making a backup of your ROM first.
+
+If you find any issues with the tool feel free to PM me about it.

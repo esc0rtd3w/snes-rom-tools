@@ -1,0 +1,18 @@
+[sprite=4] (30,16,80,01,big)(30,26,A0,01,big) 
+(C0,16,82,03,big)(C0,26,A2,03,big) [/sprite]
+
+[topic]-FAWFUL-[/topic]
+
+I HAVE FURY! My Bean n' Badge business was flushed down the toilet like an annoying child's dead
+pet fish![wait][erase]
+Now my fate has confined me to running this wretched dump on this island fraught with 
+foolish fools! Ahem- I mean, welcome to Fawful's Furious Fortunes! How may I help you?[wait][erase]
+
+[pad left=16][br]
+Get fortune[br]
+Leave[pad left=8]
+[branch=GetFortune,Leave]
+
+[label=GetFortune][end=00]
+
+[label=Leave][end=01]

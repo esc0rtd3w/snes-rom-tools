@@ -1,0 +1,360 @@
+SECRET OF MANA EDITOR RELEASE NOTES
+questions to umokumok@gmail.com
+or http://somedit.proboards.com
+or http://somedit.blogspot.com
+or MSN umokumok@hotmail.com (MSN only - I don't read these emails)
+
+------------------
+--- KNOWN BUGS ---
+------------------
+
+ - Some maps' collision sets are all wrong - particularly those with
+   tileset 4, like map 263.
+ - There are minor display issues with some maps; need to figure out
+   how and when to draw the tile BG color.
+ - "Animated" palettes (like those used in Ice Country) are not
+   supported yet, and editing them may have unexpected results.
+ - Bosses except for Mantis Ant do not display correctly.  Also,
+   static parts of boss sprites (like the crying kid on the mantis
+   ant map, or the background on the mana beast map, 253, do not
+   display yet)
+ - Map 256 does not display correctly - the log is missing.
+ - Sprites don't show at the exact right spot on maps.
+ - Writing a particularly long song may cause your sound effects or
+   SPC in general to bug out.  I need to do some re-org on how
+   SOM manages SPC memory.
+ - Map 406 etc has an issue where layer 1 uses FG, layer 2 uses BG,
+   and the collisions are not correct.
+
+-------------
+--- TO-DO ---
+-------------
+
+ - A bunch of event commands are still unsupported.
+ - A bunch of music commands are still unsupported.
+ - Need to figure out how best to manage sprites, animations, etc.
+ - Importing for Title screen background (tree JPG)
+ - Writing back to ROM for title screen organization and tiles
+ - Support the extra line of world map data, that is used
+   to replace the line of purple stuff when the lost continent or
+   whatever that thing is called is raised.
+ - Support FuSoYa-style variable width fonts.
+ - Spell editing & graphics.
+ - Item editing & graphics.
+ - Weapon editing & graphics.
+ - Menu editing & graphics.
+ - ExHiROM Testing
+ - Support a bunch of additional numeric stuff.
+ - Patch to fix P2/P3 sticking problems.
+ - Finish editing for events.
+
+
+Changes:
+
+******************
+*** build 0204 ***
+******************
+
+ - Weapon and armor stats can now be edited and written to the ROM.
+ - Ring menu tiles can now be edited and written to the ROM.
+ - Fixed a bug with misc settings showing the wrong values.
+ - Added a "This doesn't work yet" message to enemy stats, which
+   indeed don't work yet, and fixed the positioning of the one
+   on the spell editor screen.
+
+
+******************
+*** build 0203 ***
+******************
+
+ - Title screen tiles, arrangements, text, and palette editing.
+   These are probably pretty buggy so feel free to report problems.
+ - Sprite tile and formation editing.  These are probably pretty 
+   buggy so feel free to report problems.
+ - Beginning of what will hopefully be complete help pages for the
+   editor eventually.
+ - Loading of spell graphics and some other stuff that isn't editable
+   yet.
+ - Fixed a bug with maps that have a walk-on trigger, but no other 
+   triggers.
+ - Probably a bunch of other shit that I can't remember.
+
+
+******************
+*** build 0202 ***
+******************
+
+ - Process "Special events" for maps.  This fixes inconsistent trigger
+   lists with a number of maps (248, 265, 17) and allows you to edit
+   what happens when you step on a "special event" tile.
+ - Fix size of right tab on composite maps view when collapsing then
+   restoring it.
+ - Add collision types for the partially destroyed crystal things in the
+   mana fort interior.
+ - Fixed issue where loading a new file would.. merge the fonts from the
+   two files together.
+ - Clear the display and close all secondary windows when loading a new
+   file to avoid keeping stale data up.
+ - Fixed issue where loading another project would continue to add more
+   tiles, tilesets, and palettes on top of the ones from the previous
+   project.
+ - Fixed issue where sound effects samples weren't clearing out properly
+   for a new load.
+ - If you go to create a new project, then cancel the first dialog, it
+   will no longer open the second one.
+
+
+******************
+*** build 0201 ***
+******************
+
+ - You can now pass a .som project as a command-line argument, and it will
+   open it (ie, associate the filetype in windows)
+ - Added a collapse/expand button to the left-side tree.
+ - Title screen tree graphic and organization of the logos and such are 
+   loading, finally.  Curious whose bright idea it was to use JPEG
+   compression for that tree graphic and spend 20-30 seconds decompressing 
+   it.  Later I'll make it so you can import your own and compress it back;
+   it's just for show for now.
+ - Add graph and function input for character stats editor.
+ - Add an "Edit" palette button on the Tileset16 screen.
+ - Add collision type for those little crystals in the mana fort that you
+   have to slash a few times.
+ - Fix minor hex/dec conversion issue with finding referencing events from
+   the door editor screen.
+ - Preliminary support for exporting to a 6 MB ExHiRom ROM (a la Tales of
+   Phantasia).  This includes a number of SOM code mods that have probably
+   not been tested thoroughly enough.  Will only happen if your ROM requires
+   between 4 and 6 MB of space.  Also, it only expands as necessary now (not
+   at all if you added nothing, to 3 MB, then to 4 MB, then to 6.)
+ - Add menu item for exporting an IPS patch, which is not yet implemented.
+ - Preliminary loading of sound effects, but these aren't editable yet.
+   Before audio is fully editable/expandable/whatnot I need to do a bit
+   of a re-org of how they store stuff in SPC700 memory.
+ - Add ability to pull a section off into another window so you can work
+   with two related sections side by side.
+ - MIDI importer improvements; still not wonderful, but getting closer to
+   what I want.
+ - Fix an issue where the tileset editor wouldn't let you edit foreground
+   tiles.
+ - Preliminary support for sprite loading.  Some sprites render properly
+   on maps.  Most bosses (Except Mantis Ant, who was my test subject for
+   boss tile decompression) do not yet. Composite maps may show exceptions
+   for displaying some sprites - these should not crash or otherwise affect
+   stability.. debug-only.
+ - Complete rewrite of map editors.. should be much faster and more
+   stable now.  Removed OpenGL components.  Should no longer depend on
+   OpenTK DLLs.
+ - Fix bug where map piece filtering for the initial map (128) would be 
+   blank until you switch maps.
+ - Fix object directions - up and down were swapped.
+ - More convenience shortcuts on various components.
+ - Allow changing direction and "mobile" flag of objects.
+ - Update selection in tileset view when eyedropper used to pick a tile
+   from a map piece.
+ - Fix bug where map filtering wouldn't work correctly when flipping
+   through maps.
+
+Known issues:
+ - Having issues getting the right scrolling range on the scrollbars I use
+   on stuff like the map editors and the music editor.
+ - As mentioned, many sprites do not look right yet.
+
+
+******************
+*** build 0107 ***
+******************
+ 
+ - Fix issue where overlapping map pieces would be rendered incorrectly.
+ - Added ability to filter displayed map pieces and objects based on state 
+   of event flags.
+ - When you right-click on a stack of objects, they'll all come up in the
+   list now.
+
+Known issues:
+ - Maps render better now, but certain things still don't work (like the hole 
+   in Potos) and it is quite slow.  I'll be addressing these things soon.
+
+
+******************
+*** build 0106 ***
+******************
+  
+ - Fix exception on drawing some map pieces.
+ - Fix tile view on raw tile editor when changing palettes.
+ - Remove some unused FMOD-referencing code.
+ - Fix rightclick menu for certain maps where it was not showing up.
+ - Fix maximum for width and height on map pieces editor.
+ - Implement double click for event search results.
+ - When jumping to an event in search results, also jump to the line in question.
+ - When searching for event flags, return map piece results.
+ - Fixed crash on map 243.
+ - Add Ctrl+Z key shortcut for undo on map pieces and world map editors.
+ - Add more editable event types.  Event editor is still buggy, but it's being worked on.
+ - Remove debug logging in event editor.
+ - Added "Misc Settings" editor with various code-change-related options.
+ - Fixed handling of config file when it doesn't exist.
+ - Make door transition type editor usable.
+ - Fix bug with exporting doors and change description for collision-related bit,
+   which was causing trouble.
+ - Add ability to search for doors the lead to the selected map.
+ - Implement the missing controls in door editor.
+ - Fix issue with map 180 where pieces > 888 would screw up the tree view.
+ - Fix issue where if event text was too wide for the picturebox, it wouldn't
+   render at all, instead of clipping.
+
+
+******************
+*** build 0105 ***
+******************
+
+ - What were previously "doors" on maps are now "triggers" since walk-over events are
+   encompassed in the same data.  "Doors" are now the warper data referenced by values
+   0x800 to 0xBFF in this data set.
+ - Add editor for composite map "display settings" and "doors."  Change how composite maps
+   are rendered to use display settings, which makes a lot more maps look correct.  
+   Fix reference to doors in event descriptions.
+ - Fix issue where first time editing a map piece, drawing wouldn't work until you picked
+   a tile or made a selection.
+ - Fix issue where simply clicking to place a tile on map piece editor would not do 
+   anything until you moved the mouse.
+ - Use OpenGL rendering for map pieces to speed things up.
+ - Implement eyedrop picker thing for map pieces.
+ - Fix display of animated tiles in map piece editor tileset view.
+ - Add ability to overlay other map pieces from a selected composite map in map piece editor.
+   Not sure how useful this will be, but I suppose it can be tweaked to look better in time.
+ - Fix problem with exporting event types x10 and x20 (jump and jump subroutine to events 
+   from 0x00 to 0xFF) back to ROM.  Previously resulted in "Oh fuck," exception stack trace, 
+   and broken ROM.
+ - Add handling for walk-on events for maps.
+ - Fix background color handling for maps.
+ - Implement right-click on object -> "edit object" and "edit trigger," for maps.
+ - Fix bug where "Edit BG piece" wouldn't do anything the first time.
+ - Added a little preview of the tile you'd be editing in the rightclick -> Edit 16x16 tile
+   menu.
+ - Fixed some issues with maps where layer 1 uses the foreground layer and layer 2 uses
+   the background layer (like Matango/146).
+ - Fixed opening a project when you already have a project open.
+ - Fixed some bugs in event editor and added more editable event types.
+ - Added various search features for events, and removed the old half-assed search box.
+ - Fix bug where every event is written to project file instead of only modified ones.
+ - Can now export composite map data to ROM.
+
+Known issues:
+ - Not everything is editable for composite maps yet.  It's coming.
+ - Composite map renderer is slow.  It's not using OpenGL rendering yet.  Will fix when I have time.
+ - Now that some things render with OpenGL, you'll need the OpenTK DLLs OpenTK.dll and
+   OpenTK.GLControl.dll with the exe or on your path to run the editor.  You can find these in
+   opentk/Binaries/OpenTK/Release in the zipped package at:
+   http://sourceforge.net/projects/opentk/files/opentk/opentk-1.0/2010-10-06/opentk-2010-10-06.zip/download
+
+
+******************
+*** build 0104 ***
+******************
+
+ - Map pieces view now resizes the image when you resize the window.
+ - Fixed bug where some 3BPP tiles showed up in wrong palette in some tileset views.
+ - When previewing a sample, add selection for what note to play.
+ - Remove buttons from sample editor that didn't do anything.
+ - Changed handling of animated tiles at the bottom of tileset8s.  All frames should
+   load now and they are modified together as one set, since that's how they're stored
+   in the ROM.
+ - "Export to ROM" implemented for modified tile data, tileset16s, map pieces,
+    map palettes, tileset8s, events/dialogue, game font, music, and samples.
+ - Fix bug where map piece loaded from project data was not marked as modified.
+ - Tileset palettes are now save-able and exportable/importable (as a whole, for now).
+ - Fixed bug where a song loaded from an external file would be saved to the project as
+   song 0.
+
+ - Known issues:
+   - ROM file written with "Export to ROM" will not yet be re-openable by the editor.
+     Project files should only be created with the original game ROM for now.
+   - "Composite Maps" will not export to ROM yet.  Still working on the data for these.
+
+
+******************
+*** build 0103 ***
+******************
+
+ - World map palettes are now editable.
+ - World map "landable" definitions are now editable.
+ - Fixed bug where world map tile editor didn't save palette changes.
+ - Don't use crosshair cursor for world map tiles selectors.
+ - Fixed some "Unknown" event types and added loading for additional events.
+ - Added Undo button for map pieces editor.
+ - Added Undo button for world map editor.
+
+
+******************
+*** build 0102 ***
+******************
+
+ - The following things should now be save-able, load-able, export-able, and import-able:
+   - Music
+   - Samples
+   - Events
+   - 8x8 Tilesets
+   - 16x16 Tilesets
+   - Tile data
+   - Map pieces
+   - Composite maps
+   - World map data
+   - Game font
+
+ - Music editor correctly determines song width for scroll bar now.
+ - Music editor sets scroll bar back to initial position when changing songs or channels.
+ - Removed BG_ALT and FG_ALT checkboxes on composite map editor.
+ - Fixed a bug where 8x8 tileset view on the 16x16 tileset editor sometimes didn't show tiles.
+ - Fixed crash on palette set 127, palette 7.
+ - Foreign characters should show up properly now, though there is still no real translation.
+ - Fixed issue where value in numeric up/downs on 8x8 tileset editor would sometimes not change.
+ - Removed more debug text
+
+
+******************
+*** build 0101 ***
+******************
+
+ - Fixed crash on minimize for composite maps.
+ - Allow SOMEDIT to start and close cleanly if fmod.dll is not present, and disable audio playback.
+ - Turn off debug logging.
+
+
+******************
+*** build 0100 ***
+******************
+
+Initial release.  This release is not overly functional and is really just something for everyone to play
+around with and bugtest.  Supports editing the following things:
+ - Maps
+ - Tilesets
+ - Events/Dialogue
+ - Music samples
+ - Music data
+ - Font
+
+Known issues:
+ - This is a preliminary release; MANY things will not work, it is expected to be very unstable.  
+   Please report problems to umokumok@gmail.com or post to 
+ - Some maps still do not render correctly.  I'm still playing with finding the correct render ordering
+   of the layers involved.
+ - Not all event types are known.  "Unknown" types should still be editable.
+ - Not all music commands are known.  "Unknown" types should still be editable.
+ - Much of the GUI is not overly user-friendly, has threading issues, or just generally needs work. This
+   will be resolved in time.  Getting all of the editor functionality working is my priority; after that I'll
+   make it more stable and usable.
+ - The MIDI importer is still very experimental.  Many MIDIs will not work yet.
+ - If the FMOD DLL fails to load, the program won't come up.  For now, make sure you have the right one!
+   There is a different DLL for x64.
+ - The music playback does not sound perfect.  The timing on most of the commands is currently a best-guess.
+   Also, not all commands are even supported by playback yet (like vibrato).
+ - Most of the graphics are drawn with GDI and are rather slow.  This will be improved later.
+
+Limitations:
+ - Exporting data to a ROM is not yet supported, as a lot of the loading and editing is
+   still imperfect.
+ - Sample size cannot be adjusted yet.  However, imported WAVs can be resized to the size of the
+   existing sample.
+ - Not all events are editable yet.  This interface is being worked on.
+ 

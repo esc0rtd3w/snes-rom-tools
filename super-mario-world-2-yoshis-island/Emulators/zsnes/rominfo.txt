@@ -1,0 +1,7 @@
+This is the info for the last game you ran.
+
+File: smw2.sfc Header: No
+YOSHI'S ISLAND            TYPE:SUPER FX 
+INTERLEAVED:No               CHKSUM:OK  
+VIDEO:NTSC    BANK:Lo     CRC32:D138F224
+                                        

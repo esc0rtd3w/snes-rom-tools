@@ -1,0 +1,104 @@
+signal to LM that ROM is protected
+001FF:00
+
+UNKNOWN!!!!!  (NOT REQUIRED?)
+028CC:???? ????
+
+unknown!! something to do with special blocks, yoshi, etc (ExGFX?)  (use encrypted-pointer decryption routine on this)
+03A8B:C0BF
+ $00/B888 C2 10       REP #$10                A:940F X:0010 Y:0004 P:envMXdiZc
+ $00/B88A A0 5B C6    LDY #$C65B              A:940F X:0010 Y:0004 P:envMxdiZc
+ $00/B88D 84 8A       STY $8A    [$00:008A]   A:940F X:0010 Y:C65B P:eNvMxdizc
+
+unknown!! (ExGFX?)
+03AD8:0080
+ $00/B8D7 A9 9B F9    LDA #$F99B              A:0000 X:FFFF Y:0001 P:eNvmxdizC
+ $00/B8DA 85 8A       STA $8A    [$00:008A]   A:F99B X:FFFF Y:0001 P:eNvmxdizC
+
+go decrypt encrypted-pointers
+03ADE:C210,A000,00  -- $00/B8DE
+ C2 10     rep #$10
+ A0 00 00  ldy #$0000
+
+encrypted-pointers
+03B92 - 0x64 bytes
+ u8 ptr[3][0x32];
+ //ptr[0][x] = lower byte of pointer x
+ //ptr[1][x] = mid byte of pointer x
+ //ptr[2][x] = upper byte of pointer x
+
+rom header
+081BF:FF53,5550,4552,204D,4152,494F,574F,524C,4420,2020,2020,2002, xx 01,0101,00
+(xx = ???)
+
+unknown!!
+1BD1F:FF
+
+go decrypt level data
+28805:850A,C8B7,65  -- $05/8605 (see below)
+ 85 0A  sta $0A
+ C8     iny
+ B7 65  lda [$65],y
+
+
+UNKNOWN!! (NOT NEEDED??)
+2D9CE:xxxx,xxxx
+2D936:xxxx,xxxx,xx
+2DB7D:xxxx,xxxx
+2DBE8:xxxx,xxxx
+2DDC2:xxxx,xxxx,xxxx
+2DE50: (0x6E bytes)
+2DF00: (0x1F bytes)
+2DF30: (0x40 bytes)
+
+
+Stage pointers,  512 * 3 bytes each
+2E200
+
+
+decrypt level data
+6F300 - 0x14 bytes changed, level decryption routine
+
+;;28805 = $05/8605, protected trace
+$05/85FF E2 30       SEP #$30                A:8A31 X:00FF Y:0000 D:0000 DB:00 S:01F4 P:envMXdizc HC:0674 VC:048 00 FL:61889
+$05/8601 A0 00       LDY #$00                A:8A31 X:00FF Y:0000 D:0000 DB:00 S:01F4 P:envMXdizc HC:0696 VC:048 00 FL:61889
+$05/8603 B7 65       LDA [$65],y[$10:800D]   A:8A31 X:00FF Y:0000 D:0000 DB:00 S:01F4 P:envMXdiZc HC:0712 VC:048 00 FL:61889
+$05/8605 22 00 F1 0D JSL $0DF100[$0D:F100]   A:8A31 X:00FF Y:0000 D:0000 DB:00 S:01F4 P:envMXdizc HC:0760 VC:048 00 FL:61889
+
+;;6F300 = $0D/F100
+$0D/F100 A6 67       LDX $67    [$00:0067]   A:8A31 X:00FF Y:0000 D:0000 DB:00 S:01F1 P:envMXdizc HC:0816 VC:048 00 FL:61890
+$0D/F102 E0 10       CPX #$10                A:8A31 X:0010 Y:0000 D:0000 DB:00 S:01F1 P:envMXdizc HC:0840 VC:048 00 FL:61890
+$0D/F104 90 02       BCC $02    [$F108]      A:8A31 X:0010 Y:0000 D:0000 DB:00 S:01F1 P:envMXdiZC HC:0856 VC:048 00 FL:61890
+$0D/F106 49 69       EOR #$69                A:8A31 X:0010 Y:0000 D:0000 DB:00 S:01F1 P:envMXdiZC HC:0872 VC:048 00 FL:61890
+$0D/F108 85 0A       STA $0A    [$00:000A]   A:8A58 X:0010 Y:0000 D:0000 DB:00 S:01F1 P:envMXdizC HC:0888 VC:048 00 FL:61890
+$0D/F10A C8          INY                     A:8A58 X:0010 Y:0000 D:0000 DB:00 S:01F1 P:envMXdizC HC:0912 VC:048 00 FL:61890
+$0D/F10B B7 65       LDA [$65],y[$10:800E]   A:8A58 X:0010 Y:0001 D:0000 DB:00 S:01F1 P:envMXdizC HC:0926 VC:048 00 FL:61890
+$0D/F10D E0 10       CPX #$10                A:8A9F X:0010 Y:0001 D:0000 DB:00 S:01F1 P:eNvMXdizC HC:0974 VC:048 00 FL:61890
+$0D/F10F 90 02       BCC $02    [$F113]      A:8A9F X:0010 Y:0001 D:0000 DB:00 S:01F1 P:envMXdiZC HC:0990 VC:048 00 FL:61890
+$0D/F111 49 8F       EOR #$8F                A:8A9F X:0010 Y:0001 D:0000 DB:00 S:01F1 P:envMXdiZC HC:1006 VC:048 00 FL:61890
+$0D/F113 6B          RTL                     A:8A10 X:0010 Y:0001 D:0000 DB:00 S:01F1 P:envMXdizC HC:1022 VC:048 00 FL:61890
+
+$05/8609 EA          NOP                     A:8A10 X:0010 Y:0001 D:0000 DB:00 S:01F4 P:envMXdizC HC:1082 VC:048 00 FL:61889
+$05/860A 85 0B       STA $0B    [$00:000B]   A:8A10 X:0010 Y:0001 D:0000 DB:00 S:01F4 P:envMXdizC HC:1096 VC:048 00 FL:61889
+
+
+
+decrypt encrypted-pointers
+6F3A0 - 0x11 bytes changed, encrypted-pointer decryption
+
+$00/B8DE 22 A0 F1 0D JSL $0DF1A0[$0D:F1A0]   A:027E X:00FF Y:000F D:0000 DB:00 S:01F2 P:envMXdizC HC:0496 VC:040 00 FL:9012
+
+$0D/F1A0 08          PHP                     A:027E X:00FF Y:000F D:0000 DB:00 S:01EF P:envMXdizC HC:0552 VC:040 00 FL:9013
+$0D/F1A1 C2 30       REP #$30                A:027E X:00FF Y:000F D:0000 DB:00 S:01EE P:envMXdizC HC:0574 VC:040 00 FL:9013
+$0D/F1A3 A5 8A       LDA $8A    [$00:008A]   A:027E X:00FF Y:000F D:0000 DB:00 S:01EE P:envmxdizC HC:0596 VC:040 00 FL:9013
+$0D/F1A5 49 B9 89    EOR #$89B9              A:6F5C X:00FF Y:000F D:0000 DB:00 S:01EE P:envmxdizC HC:0628 VC:040 00 FL:9013
+$0D/F1A8 85 8A       STA $8A    [$00:008A]   A:E6E5 X:00FF Y:000F D:0000 DB:00 S:01EE P:eNvmxdizC HC:0652 VC:040 00 FL:9013
+$0D/F1AA 28          PLP                     A:E6E5 X:00FF Y:000F D:0000 DB:00 S:01EE P:eNvmxdizC HC:0684 VC:040 00 FL:9013
+$0D/F1AB C2 10       REP #$10                A:E6E5 X:00FF Y:000F D:0000 DB:00 S:01EF P:envMXdizC HC:0712 VC:040 00 FL:9013
+$0D/F1AD A0 00 00    LDY #$0000              A:E6E5 X:00FF Y:000F D:0000 DB:00 S:01EF P:envMxdizC HC:0734 VC:040 00 FL:9013
+$0D/F1B0 6B          RTL                     A:E6E5 X:00FF Y:0000 D:0000 DB:00 S:01EF P:envMxdiZC HC:0758 VC:040 00 FL:9013
+
+
+
+ExGFX pointers
+0x07F800

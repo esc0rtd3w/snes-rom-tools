@@ -1,0 +1,2 @@
+This version of tinymm will output the < and > octaves correctly.
+Just drag and drop a midi over the app.

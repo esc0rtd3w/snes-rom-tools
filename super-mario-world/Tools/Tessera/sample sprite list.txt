@@ -1,0 +1,2 @@
+
+100 sprite.cfg 1		; insert a sprite called "sprite.cfg" as sprite 100, and mark it as using 1 extra byte

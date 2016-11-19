@@ -1,0 +1,1 @@
+@for %%a in (*.mid) do PetiteMM.jar --octave-reverse %%a

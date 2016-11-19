@@ -1,0 +1,59 @@
+Super Mario World - Status Bar Editor
+Version 1.1
+
+Programmed by Smallhacker
+
+
+
+What is this program?
+	This program is used for editing the status bar in
+	a Super	Mario World Rom.
+
+How to use it?
+	First, open the program and input the path to a
+	directory to where graphics have been extracted by
+	Lunar Magic. If this path is accepted, it will be
+	saved to an .ini file, which means that you won't
+	have to input the path every time the program is
+	started. Once that is done, input the name of a
+	Super Mario World Rom. Now, you'll see the main
+	program. The text at the bottom explains how to
+	use the program.
+
+Are there any limitations?
+	Yes. The program can't move the small bonus star
+	counter. Nor can it move the score. This is due
+	to those counters being hardcoded by ASM. Also,
+	the item reserve sprite can't be moved.
+
+I belive that I've found a bug. / I've got a suggestion.
+	Tell me!
+
+
+
+Legal (a.k.a. boring) stuff:
+Super Mario World is copyrighted by Nintendo. Smallhacker
+is in no way affilated with Nintendo. Graphics shown by
+this program may be copyrighted by Nintendo. Smallhacker
+takes no reponsibility for how people use this program,
+nor can he guarantee that the program won't mess up the
+Rom it is used with. Making good games should be
+copyrighted by Nintendo.
+
+
+
+
+Changes in version 1.1:
+* Fixed a bug reported by BigMattrizzle related to the timer counter.
+* Made some small changes unnoticeable to the user.
+
+
+
+
+Smallhacker would like to thank the following people:
+
+BigMattrizzle
+Blackhole89
+BMF54123
+Blitz Research Ltd.
+BreakPoint Software Inc.

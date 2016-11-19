@@ -1,0 +1,69 @@
+Super Mario World - Misc. Text Editor
+Version 1.1
+
+Programmed by Smallhacker
+
+
+
+What is this program?
+	This program is used for editing the some of the
+	text in a Super Mario World Rom that cannot be
+	changed through Lunar Magic.
+
+How to use it?
+	First, open the program and input the path to a
+	directory to where graphics have been extracted by
+	Lunar Magic. If this path is accepted, it will be
+	saved to an .ini file, which means that you won't
+	have to input the path every time the program is
+	started. Once that is done, input the name of a
+	Super Mario World Rom. Now, you'll see the main
+	program. The text to the right explains how to use
+	the program.
+
+The first time I started the program, it said something
+about SMWSBE.
+	If a SMWMTE .ini file can't be found, the program
+	searches for SMWSBE's .ini and copies it's data.
+
+What are those "<" thingies that jumps around whenever I
+press P?
+	The P button changes which one of the three
+	(hardcoded) palette sets that should be shown by
+	the program. The "<"s points at those strings
+	which uses the currently selected palette set.
+
+Are there any limitations?
+	Yes. The texts' length can't be changed.
+
+I belive that I've found a bug. / I've got a suggestion.
+	Tell me!
+
+
+
+Legal (a.k.a. boring) stuff:
+Super Mario World is copyrighted by Nintendo. Smallhacker
+is in no way affilated with Nintendo. Graphics shown by
+this program may be copyrighted by Nintendo. Smallhacker
+takes no reponsibility for how people use this program,
+nor can he guarantee that the program won't mess up the
+Rom it is used with. Making good games should be
+copyrighted by Nintendo.
+
+
+
+Changes in version 1.01:
+*Fixed a small but harmless bug...
+
+Changes in version 1.1:
+*Fixed a big bug which could destroy the Rom.
+
+
+
+Smallhacker would like to thank the following people:
+
+SuperBeb
+smwedit
+BMF54123
+Blitz Research Ltd.
+BreakPoint Software Inc.

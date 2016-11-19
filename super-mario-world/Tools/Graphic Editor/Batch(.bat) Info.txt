@@ -1,0 +1,11 @@
+The Batch inside this package only tries to start Java with
+the "Graphic Editor.jar"...
+
+Therefore you still need to Install Java!
+
+The only purpose for this Batch is to for Setting the .jar
+as default program
+(since Windows only allows .bat and not .jar programs for that...)
+and also it allows to start the Palette Editor seperatly
+
+p.s. it also allows to open Files via Drag and Drop over the .bat

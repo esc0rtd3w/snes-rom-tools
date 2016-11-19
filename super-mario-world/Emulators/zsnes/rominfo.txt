@@ -1,0 +1,7 @@
+This is the info for the last game you ran.
+
+File: smw.smc Header: Yes
+SUPER MARIOWORLD          TYPE:NORMAL   
+INTERLEAVED:No               CHKSUM:OK  
+VIDEO:NTSC    BANK:Lo     CRC32:BF2DAF36
+                                        

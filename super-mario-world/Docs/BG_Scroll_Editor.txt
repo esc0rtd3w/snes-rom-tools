@@ -1,0 +1,19 @@
+This is just a simple tool that edits the BG scroll options seen in the "Change Other Properties" dialog in LM.
+- changes will show up in LM
+
+This application will require the .NET framework if you don't already have it.
+
+NEW in v2.1
+	- You can now choose "Slow" for Horizontal Scroll, as I have integrated lolcats439's H:Slow patch.
+	- Fixed window title saying "Form1"
+	- Added a dialog that appears after you click the "Save All" button
+
+NEW in v2.0
+	- Completely rewritten
+	- Now reloads ROM before saving so it can be edited with other programs at the same time
+	- Added Save / Don't Save dialogs
+
+NOTE: the H:Slow patch is always inserted into freespace $05DFF3 (0x0D bytes)
+This is unused space within the original SMW ROM's code, so it won't cause problems.
+
+Please report any glitches to edit1754.

@@ -1,0 +1,53 @@
+Super Mario World - Boss Battle Palette Editor
+Version 1.0
+
+Programmed by Smallhacker
+
+
+
+What is this program?
+	This program is used for editing a few palettes
+	used during boss battles in a Super Mario World
+	Rom that cannot be changed through Lunar Magic.
+
+How to use it?
+	Open the program and enter the name of the ROM to
+	load. You will see some colored boxes and three
+	lines with gray boxes on them. In order to choose
+	a color to edit, click on it. To edit it, move
+	the boxes on the lines. Press S to save. If you
+	right click on a color, it will be copied to the
+	current one.
+
+In the Bowser palette, do I have to do the fading myself?
+	No. In order to fade a column, choose the color
+	to fade into from the top and press F. Note that
+	since the original fading seems to be hand made,
+	the program won't fade EXACTLY the same.
+
+Are there any limitations?
+	Yes. Only Bowser's and Iggy's/Larry's Platform's
+	palette can be edited so far.
+
+I belive that I've found a bug. / I've got a suggestion.
+	Tell me!
+
+
+
+Legal (a.k.a. boring) stuff:
+Super Mario World is copyrighted by Nintendo. Smallhacker
+is in no way affilated with Nintendo. Colors shown by
+this program may be copyrighted by Nintendo. (Ok... Maybe
+not.) Smallhacker takes no reponsibility for how people
+use this program, nor can he guarantee that the program
+won't mess up the Rom it is used with. Making good games
+should be copyrighted by Nintendo.
+
+
+
+Smallhacker would like to thank the following people:
+
+MikeyK
+Someguy
+Blitz Research Ltd.
+BreakPoint Software Inc.

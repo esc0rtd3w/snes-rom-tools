@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EmulatorPath>Emulators\zsnes\zsnesw.exe</EmulatorPath>
+  <Maximized>true</Maximized>
+  <WndRect>
+    <left>-8</left>
+    <top>5</top>
+    <right>352</right>
+    <bottom>365</bottom>
+  </WndRect>
+</Settings>

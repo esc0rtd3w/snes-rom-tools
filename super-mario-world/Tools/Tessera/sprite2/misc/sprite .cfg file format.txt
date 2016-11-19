@@ -1,0 +1,90 @@
+
+$1656,x - Tweaker table 1
+- Bits 0-3: Object clipping, table offset (0-E are valid in the original SMW; F may be used to indicate custom clipping)
+- Bit 4: Can be jumped on
+- Bit 5: Dies when jumped on
+- Bit 6: Hop in/kick shells
+- Bit 7: Disappear in cloud of smoke
+
+$1662,x - Tweaker table 2
+- Bits 0-5: Sprite clipping, table offset (0-3B are valid in the original SMW; 3C-3F may be used to indicate custom clipping)
+- Bit 6: Use shell as death frame
+- Bit 7: Falls straight down when killed
+
+$166E,x - Tweaker table 3
+- Bit 0: Use second graphics page
+- Bits 1-3: Palette
+- Bit 4: Disable fireball killing
+- Bit 5: Disable cape killing
+- Bit 6: Disable water splash
+- Bit 7: Don't interact with layer 2
+
+$167A,x - Tweaker table 4
+- Bit 0: Don't disable clipping when killed with star
+- Bit 1: Invincible to star/cape/fire/bouncing bricks
+- Bit 2: Process while off screen
+- Bit 3: Don't change into a shell when stunned
+- Bit 4: Can't be kicked like a shell
+- Bit 5: Process interaction with the player every frame
+- Bit 6: Gives power-up when eaten by Yoshi
+- Bit 7: Don't use default player interaction
+
+$1686,x - Tweaker table 5
+- Bit 0: Inedible
+- Bit 1: Stay in Yoshi's mouth
+- Bit 2: Weird ground behavior (?)
+- Bit 3: Don't interact with other sprites
+- Bit 4: Don't change direction if touched
+- Bit 5: Don't turn into a coin when goal passed
+- Bit 6: Spawns a new sprite
+- Bit 7: Don't interact with objects
+
+$190F,x - Tweaker table 6
+- Bit 0: Make platform passable from below
+- Bit 1: Don't erase when goal passed
+- Bit 2: Can't be killed by sliding
+- Bit 3: Takes 5 fireballs to kill
+- Bit 4: Can be jumped on with upward Y speed
+- Bit 5: Death frame 2 tiles high
+- Bit 6: Don't turn into a coin when silver P-switch active
+- Bit 7: Don't get stuck in walls if carryable
+
+$7FAB28,x - extra property byte 1
+- Bits 0-7: free for custom use
+
+$7FAB34,x - extra property byte 2
+- Bits 0-2: statuses to run custom code in, table offset
+- Bits 3-7: reserved for future use
+
+$7FAB70,x - possible future custom sprite clipping
+- Bits 0-7: custom sprite clipping index, table offset
+
+$7FAB7C,x - possible future custom object clipping
+- Bits 0-7: custom object clipping index, table offset
+
+$7FAB92,x - reserved
+- Bits 0-7: reserved for future use
+
+$7FABAA,x - possible custom sprite clipping X displacement
+- Bits 0-7: X displacement for dynamic sprite clipping
+
+$7FABB6,x - possible custom sprite clipping Y displacement
+- Bits 0-7: Y displacement for dynamic sprite clipping
+
+$7FABC2,x - possible custom sprite clipping width
+- Bits 0-7: width for dynamic sprite clipping
+
+$7FABCE,x - possible custom sprite clipping height
+- Bits 0-7: height for dynamic sprite clipping
+
+$7FABD8,x - possible Tweaker table 7
+- Bits 0-7: reserved for future use
+
+$7FABE4,x - possible Tweaker table 8
+- Bits 0-7: reserved for future use
+
+
+
+
+
+

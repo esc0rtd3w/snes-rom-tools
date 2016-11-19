@@ -1,0 +1,43 @@
+Header Magic
+Version 1.04
+Author: byuu
+Release date: 2011-07-24
+
+
+About:
+The original Lunar Magic application requires a header to be appended before it can edit the files.
+By using Header Magic, headerless ROMs can be opened and edited directly, without the need for a header to ever be appended.
+Unlike simple batch scripts, Header Magic will not simply create hidden copies of the file.
+It truly extends Lunar Magic to seamlessly support headerless ROMs.
+
+
+Support:
+Permission was granted by FuSoYa to make this application.
+However, there is absolutely no support provided by FuSoYa for this application.
+Please do not contact FuSoYa about Header Magic.
+
+
+Download:
+Lunar Magic does not allow its distribution in any form other than its own ZIP archive.
+As such, wget and unzip have been included to automatically download lm182.zip and extract the program.
+This will only happen once upon first launch of the application.
+You are then free to remove wget.exe and unzip.exe, as they are no longer necessary.
+
+
+Technical details:
+Header Magic.exe is a launcher application. It will load in Lunar Magic.dll as a new debuggee process.
+It will then overwrite the program entry point to perform a DLL injection for Header Magic.dll.
+Once Header Magic.dll is loaded into the process, it will hook all file access functions from the process' copy of kernel32.
+The original entry point for Lunar Magic will then be restored, and the program will be allowed to run normally.
+Command-line arguments are forwarded along, so drag-and-drop still works seamlessly.
+When Lunar Magic attempts to work with SNES ROM images, Header Magic will intervene.
+If it detects a headerless ROM, it will tell Lunar Magic that there is indeed a header, and adjust the ROM offsets to compensate.
+If it detects a headered ROM, operation will be identical to the standard Lunar Magic.
+The entire process is 100% seamless and transparent. Absolutely no modifications have been made to the Lunar Magic binary.
+The Lunar Magic binary was simply renamed to a DLL so that it is not accidentally launched instead of Header Magic.
+
+
+Extensibility:
+Full source code can be obtained from http://byuu.org/programming/
+Both previous and future versions of Lunar Magic should be fully compatible with Header Magic.
+In fact, the technique is easily extensive to virtually any Windows application that does not support headerless ROMs.

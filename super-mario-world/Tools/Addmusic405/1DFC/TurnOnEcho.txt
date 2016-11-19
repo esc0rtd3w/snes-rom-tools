@@ -1,0 +1,17 @@
+;This sound effect will turn on echo
+@8 v00
+$ED
+
+$65 $00		;$6500
+
+$00 $13		;$13 bytes
+
+$E8 $35		;mov a, #$35
+$8D $2C		;mov y, #$2C
+$3F $97 $06	;call $0697
+$8D $3C		;mov y #$3C
+$3F $97 $06	;call $0697
+$E8 $FF		;mov a, #$FF
+$8D $4D		;mov y, #$4D
+$3F $97 $06	;call $0697
+$6F		;ret
